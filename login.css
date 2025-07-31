@@ -1,0 +1,154 @@
+/* Base Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* Body */
+body {
+  min-height: 100vh;
+  background: linear-gradient(to right, #1e3a8a, #3b82f6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Login Container */
+.login-container {
+  background-color: #fff;
+  width: 100%;
+  max-width: 400px;
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+/* Header */
+.login-title {
+  background-color: #1e3a8a;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  font-size: 1.5rem;
+}
+
+/* Form Section */
+.login-form {
+  padding: 30px;
+  text-align: center;
+}
+
+.login-form h3 {
+  color: #1e3a8a;
+  margin-bottom: 5px;
+  font-size: 1.2rem;
+}
+
+.login-form p {
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* Input Group */
+.input-group {
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+.input-group label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 6px;
+  color: #333;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+.input-group input:focus {
+  border-color: #3b82f6;
+  outline: none;
+}
+
+/* Options */
+.form-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.9rem;
+  margin: 15px 0;
+}
+
+.form-options a {
+  color: #1e3a8a;
+  text-decoration: none;
+}
+
+.form-options a:hover {
+  text-decoration: underline;
+}
+
+/* Buttons */
+.login-btn {
+  width: 100%;
+  background-color: #1e3a8a;
+  color: #fff;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  margin-bottom: 10px;
+}
+
+.login-btn:hover {
+  background-color: #153072;
+}
+
+.new {
+  display: inline-block;
+  text-decoration: none;
+  background-color: #f59e0b;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  transition: background-color 0.3s;
+}
+
+.new:hover {
+  background-color: #d97706;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .login-container {
+    padding: 10px;
+  }
+
+  .login-form {
+    padding: 20px;
+  }
+
+  .form-options {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .new {
+    width: 100%;
+    text-align: center;
+  }
+}
